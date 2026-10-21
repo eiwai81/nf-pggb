@@ -1,0 +1,3 @@
+id,fasta,n_haplotypes,vcf_spec,pct_id
+chr1,/home/ubuntu/scratch/lm_pangenome_chr1_full.fa.gz,6,,94
+chr2,/home/ubuntu/scratch/lm_pangenome_chr2_full.fa.gz,6,,95
