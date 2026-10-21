@@ -1,4 +1,4 @@
-# pggb-nf
+# nf-pggb
 
 A streamlined Nextflow DSL2 wrapper around PanGenome Graph Builder (PGGB) [https://pggb.readthedocs.io/en/latest/index.html]. The workflow prepares BGZF FASTA inputs, optionally partitions multi-chromosome pangenomes into communities, and runs PGGB as one task per input or community.
 
