@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "nf-pggb parameters",
+  "type": "object",
+  "properties": {
+    "input": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "outdir": {
+      "type": "string",
+      "default": "results"
+    },
+    "pggb_package": {
+      "type": "string"
+    },
+    "map_pct_id": {
+      "type": "number",
+      "exclusiveMinimum": 0,
+      "maximum": 100
+    },
+    "segment_length": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "block_length": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1
+    },
+    "min_match_length": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "n_mappings": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1
+    },
+    "vcf_spec": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "pggb_args": {
+      "type": "string"
+    },
+    "community": {
+      "type": "boolean"
+    },
+    "help": {
+      "type": "boolean"
+    }
+  },
+  "additionalProperties": true
+}
