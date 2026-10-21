@@ -25,8 +25,7 @@ Optional community partitioning:
 nextflow run . --input samplesheet.csv --community true --outdir results -profile conda
 ```
 
-## Key parameters
-
+## Key parameters used in pipeline
 - `map_pct_id`: PGGB `-p`
 - `segment_length`: PGGB `-s`
 - `block_length`: PGGB `-l`
@@ -35,7 +34,13 @@ nextflow run . --input samplesheet.csv --community true --outdir results -profil
 - `pggb_args`: additional PGGB arguments
 - `pggb_package`: pinned version of Bioconda::pggb package
 
-## Estimating divergence (`map_pct_id`). 
+### Explanation on parameters
+- Essential parameters: https://pggb.readthedocs.io/en/latest/rst/essential_parameters.html
+- Optional parameters: https://pggb.readthedocs.io/en/latest/rst/optional_parameters.html
+- For Organism specific example: https://pggb.readthedocs.io/en/latest/rst/organism_example_parameters.html
+- For larger pangenomes: https://pggb.readthedocs.io/en/latest/rst/larger_pangenomes_parameters.html
+
+## Estimating divergence (`map_pct_id`).
 ```bash
 # Install mash
 mamba install mash
